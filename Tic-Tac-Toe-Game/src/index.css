@@ -9,13 +9,13 @@
 }
 
 *{
-  margin: 0;
+  box-sizing: border-box;
 }
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  margin-top: 10rem;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -26,7 +26,42 @@ body {
 }
 
 .square{
-  height: 50px;
-  width: 50px;
+  float: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 0px;
+  height: 70px;
+  padding: 0;
+  text-align: center;
+  width: 70px;
+  margin-right: -3px;
+  margin-top: -3px;
 }
 
+.status{
+  margin: 5px;
+}
+
+img{
+  animation: merry 2s infinite linear;
+}
+
+img:hover{
+  filter: drop-shadow(0 0 10px blue);
+}
+
+@keyframes merry {
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
+
+button:hover{
+  filter: drop-shadow(0 0 10px grey);
+}
+
+footer{
+  margin-top: 12rem;
+}
